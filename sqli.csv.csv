@@ -4266,6 +4266,12 @@ id=674,0
 /d/,0
 files,0
 docs,0
+"artists.php?artist=-1 union select 1,group_concat(column_name),3 from information_schema.columns where table_name='users'",1
+"artists.php?artist=-1 union select 1,group_concat(uname),3 from users",1
+"artists.php?artist=-1 union select 1,group_concat(table_name),3 from information_schema.tables where table_schema=database()",1
+"artist=-1 union select 1,database(),version()",1
+"artists.php?artist=-1 union select 1,2,3",1
+"http://testphp.vulnweb.com",0
 ; --,1
 '; --,1
 '); --,1
@@ -4481,4 +4487,4 @@ IF(7423=7423) SELECT 7423 ELSE DROP FUNCTION xcjl--,1
 admin"-- -,1
 admin"--,1
 admin'-- -,1
-admin'--
+admin'--,1

